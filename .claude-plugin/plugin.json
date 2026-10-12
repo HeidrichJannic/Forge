@@ -1,6 +1,6 @@
 {
   "name": "forge",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Engineering harness for Claude Code: from idea to plan, step-by-step build with verify gates, independent tests and review, and docs that follow the code",
   "author": {
     "name": "Jannic Heidrich",

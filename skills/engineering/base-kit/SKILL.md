@@ -50,22 +50,24 @@ Find out as much as you can before you ask:
 
 If `.forge/` exists, read every file in it and take it as the base.
 
-If the repository has no code yet, e.g. right after `/project-up`: write "none yet – added by the skeleton plan" in section 9 and set `bootstrap: true`. The first forge plan then creates the skeleton, and its last work item adds the verify commands.
+If the repository has no code yet, e.g. right after `/project-up`: write "none yet – added by the skeleton plan" under the verify commands and set `bootstrap: true`. The first forge plan then creates the skeleton, and its last work item adds the verify commands.
 
 ### 2. Ask
 
-Ask me in rounds about every context section you could not fill from the scan.
+First show me what the scan found, in plain words, one line per topic: what the project is, stack, docs, tests, CI. Mark what is missing.
 
-On a new setup, always confirm these with me, even if the scan found an answer. On an update, confirm only what changed:
+Then ask me in rounds about what the scan could not answer. Ask about topics, never about template sections.
 
-- Personal data: which data, of whom, where it is stored, whether it leaves the EU.
-- Risk areas: what you must ask me about before you change it, and what you must never change.
-- Verify commands: your proposal per command with its tier, `blocking` or `signal`. Prefer the commands CI runs. Prefer checks a tool enforces over rules in prose.
-- Default test mode: `test-first` or `test-after`.
+On a new setup, always confirm these four topics with me, even if the scan found an answer. On an update, confirm only what changed. Use these questions as the model, filled with what you found:
+
+- **Personal data:** "Which personal data does the project handle, and of whom? For example caller names and phone numbers. Where is it stored, and does any of it leave the EU?"
+- **Areas to ask about first:** "Which parts must I ask you about before I change them? My proposal: `<real paths you found, e.g. auth, migrations, infrastructure>`." And: "Is there anything I must never change, e.g. generated code?"
+- **Check commands:** Explain once: "After every step I run fixed commands to check the code. If a *blocking* command fails, the step is not done. A *signal* command is only reported." Then propose real commands from CI or the project files, one line each with its tier, and ask me to confirm or change them.
+- **Order of tests and code:** "Should tests usually come first and the code after (test-first), or the code first and the tests after (test-after)? Bug fixes are always test-first." Recommend one, with the reason from this project.
 
 ### 3. Confirm
 
-Show me the change list, one block per file: create or change, and what goes in, one line per section.
+Show me the change list in plain words, one block per file: create or change, and what goes in, grouped by topic. No section numbers.
 Ask: "Is this right? Anything to change before I write?"
 Write nothing before my explicit OK.
 
@@ -113,7 +115,7 @@ Ask whether to commit `.forge/`. Then reply in 3-5 lines: files created or chang
 
 With `bootstrap: true`: if the verify commands now exist and run, set `bootstrap: false` and check the rest. If not, `ready` stays false.
 
-Set `ready` in the frontmatter. Write the date and every missing item into the section "Readiness". Tell me the result and the next step for each missing item.
+Set `ready` in the frontmatter. Write the date and every missing item into the section "Readiness". Tell me the result in plain words and the next step for each missing item.
 
 ## Baseline mode
 

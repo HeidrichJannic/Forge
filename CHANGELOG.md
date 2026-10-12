@@ -4,6 +4,13 @@ All notable changes to forge. Format: [Keep a Changelog](https://keepachangelog.
 
 ## [Unreleased]
 
+## [0.3.2] – 2026-10-12
+
+### Changed
+
+- Questions in every forge skill: in my language, in plain words, without section numbers or template names, concrete with what was found, at most 5 per round, forge terms explained on first use.
+- `base-kit` shows a short summary of the scan first and asks four concrete questions: personal data, areas to ask about first, check commands, order of tests and code.
+
 ## [0.3.1] – 2026-10-12
 
 ### Changed
