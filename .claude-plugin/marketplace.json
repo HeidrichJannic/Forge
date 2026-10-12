@@ -1,0 +1,15 @@
+{
+  "name": "forge",
+  "description": "Plugin marketplace for forge, a lean engineering harness for Claude Code",
+  "owner": {
+    "name": "Jannic Heidrich",
+    "url": "https://github.com/HeidrichJannic"
+  },
+  "plugins": [
+    {
+      "name": "forge",
+      "source": "./",
+      "description": "Engineering harness for Claude Code: skills for engineering and productivity, core rules, tester and reviewer subagents"
+    }
+  ]
+}

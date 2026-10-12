@@ -1,0 +1,31 @@
+{
+  "name": "forge",
+  "version": "0.3.1",
+  "description": "Engineering harness for Claude Code: from idea to plan, step-by-step build with verify gates, independent tests and review, and docs that follow the code",
+  "author": {
+    "name": "Jannic Heidrich",
+    "url": "https://github.com/HeidrichJannic"
+  },
+  "repository": "https://github.com/HeidrichJannic/Forge",
+  "keywords": [
+    "harness",
+    "workflow",
+    "planning",
+    "review",
+    "testing"
+  ],
+  "skills": [
+    "./skills/engineering/project-up",
+    "./skills/engineering/base-kit",
+    "./skills/engineering/doc-it",
+    "./skills/engineering/plan-out",
+    "./skills/engineering/hammer-time",
+    "./skills/engineering/sus",
+    "./skills/engineering/brain-gain",
+    "./skills/engineering/health-check",
+    "./skills/productivity/sparring",
+    "./skills/productivity/tldr",
+    "./skills/productivity/wdym"
+  ],
+  "license": "MIT"
+}
