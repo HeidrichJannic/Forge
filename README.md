@@ -30,6 +30,7 @@ skills/
   engineering/      project-up, base-kit, doc-it, plan-out, hammer-time, sus, brain-gain, health-check
   productivity/     sparring, tldr, wdym
 agents/             tester, reviewer
+output-styles/      dev-mode, brief-me
 core/               rules.md (core rules), asking.md
 hooks/, scripts/    session hook
 ```
@@ -94,6 +95,17 @@ Every change gets a lane first. The lane decides how much process it gets.
 | `/wdym` | Explain the last message in more depth. |
 
 Subagents: `forge:tester` writes tests from the acceptance criteria, never from the implementer's reasoning. `forge:reviewer` reviews plans and changes read-only.
+
+## Output styles
+
+Pick one with `/config` → Output style. A style applies only when you pick it, in every repository.
+
+| Style | For |
+| --- | --- |
+| `dev-mode` | A developer. Result first, real names of files and functions, no explained jargon. |
+| `brief-me` | A technical project manager. Every change with its user-visible effect, internals explained once, assumptions stated. |
+
+Both flag calls Claude made without asking by the second paragraph, and ask questions with context and a recommendation.
 
 ## Overlay files
 

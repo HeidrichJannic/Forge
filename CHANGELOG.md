@@ -4,6 +4,16 @@ All notable changes to forge. Format: [Keep a Changelog](https://keepachangelog.
 
 ## [Unreleased]
 
+## [0.4.0] – 2026-10-15
+
+### Added
+
+- Output styles `dev-mode` (for a developer) and `brief-me` (for a technical project manager) in `output-styles/`, listed in `plugin.json`.
+
+### Upgrade
+
+- Run `/plugin marketplace update forge`, then restart Claude Code and pick a style with `/config`. Remove other copies of these styles, e.g. in `~/.claude/output-styles/`.
+
 ## [0.3.2] – 2026-10-12
 
 ### Changed
